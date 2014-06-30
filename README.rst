@@ -1,24 +1,25 @@
 MediaWiki Redirect Tools
 =======================================================================
 
-| Author: Benjamin Mako Hill <mako@atdot.cc>
-| Homepage: http://networkcollectiv.es/wiki-redirects/
-| License: GNU GPLv3 or any later version (see COPYING)
+  | **Author:** `Benjamin Mako Hill`__ <mako@atdot.cc>
+  | **Homepage:** http://networkcollectiv.es/wiki-redirects/
+  | **License:** `GNU GPLv3 or any later version`__ (see COPYING)
+  | **Description:** Tools to to generate a redirect spells dataset from "raw" MediaWiki XML dumps like those published by the Wikimedia foundation.
 
-If you use this software for research, please cite the following paper in any
-resulting publication:
+__ http://mako.cc/
+__ http://www.gnu.org/copyleft/gpl.html
 
-  Hill, Benjamin Mako and Aaron Shaw. "Consider the Redirect:  A Missing
+If you use this software for research, please **cite the following
+paper** in any resulting publication:
+
+  *Hill, Benjamin Mako and Aaron Shaw. "Consider the Redirect:  A Missing
   Dimension of Wikipedia Research." In Proceedings of the 10th International
-  Symposium on Open Collaboration (OpenSym 2014). ACM Press, 2014.
+  Symposium on Open Collaboration (OpenSym 2014). ACM Press, 2014.*
 
-Overview:
+**Overview:**
 
-  These tools help you generate a redirect spells dataset from "raw" MediaWiki
-  XML dumps like those published by the Wikimedia foundation.
-
-To uese these tools, you will need to a MediaWiki dump file. For Wikimedia
-Foundation projects, you can download them all from:
+To use these tools, you will need need to start with a MediaWiki dump
+file. For Wikimedia Foundation projects, you can download them all from:
 http://dumps.wikimedia.org/
 
 Wikis from Wikia.com and other Wikimedia projects all use the same XML format
@@ -31,14 +32,13 @@ Wikipedia`__ that I downloaded with the following command::
 
 __ https://simple.wikipedia.org/
 
-Before you start, you may also want to change the default directories for
-writing intermediate output files.
-
-The default directories for writing and reading files are at the top of the
-file `redirect_tools.R` and can be changed by editing that file. By default,
-all files will be written to the subdirectory "./output" in the local
-directory. If you want to use the default directories, you will still need to
-create them with a command like this::
+Before you start, you may also want to change the default directories
+for writing intermediate output files.  The default directories for
+writing and reading files are at the top of the file `redirect_tools.R`
+and can be changed by editing that file. By default, all files will be
+written to the subdirectory "./output" in the local directory. If you
+want to use the default directories, you will still need to create them
+with a command like this::
 
   mkdir output/redir output/spells
 
@@ -62,11 +62,15 @@ Run the file `01-extract_redirects.py` to build a dataset of revisions or edits
 that marks every revisions as either containinig a revision, or not.
 
 The script `01-extract_redirects.py` takes a MediaWiki dump file on STDIN and
-outputs a TSV file on STDOUT of the following form:
+outputs a TSV file on STDOUT of the following form.
 
-> page.id revision.id   page.title      timestamp       deleted redirect  target
-> 1935456 17563584        Mikhail Alekseevich Lavrentiev  1116962833      FALSE   FALSE   NA
-> 1935456 22034930        Mikhail Alekseevich Lavrentiev  1125245577      FALSE   TRUE    Mikhail Lavrentyev
++---------+-------------+--------------------------------+------------+---------+----------+--------------------+
+| page.id | revision.id | page.title                     | timestamp  | deleted | redirect | target             |
++=========+=============+================================+============+=========+==========+====================+
+| 1935456 | 17563584    | Mikhail Alekseevich Lavrentiev | 1116962833 | FALSE   | FALSE    | NA                 |
+| 1935456 | 22034930    | Mikhail Alekseevich Lavrentiev | 1125245577 | FALSE   | TRUE     | Mikhail Lavrentyev |
++---------+-------------+--------------------------------+------------+---------+----------+--------------------+
+
 
 In this case, the first revision of the article "Mikhail Alekseevich
 Lavrentiev" was not a redirect but the second is a redirect to "Mikhail
