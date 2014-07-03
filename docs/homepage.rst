@@ -14,27 +14,28 @@ __ https://en.wikipedia.org/wiki/Main_Page
 __ https://en.wikipedia.org/wiki/Seattle,_Washington
 __ https://en.wikipedia.org/wiki/Seattle
 
-In wikis, **redirects** are special pages in that silently take readers
-from the page they are visiting to another page in in the wiki. In the
-`English Wikipedia`__, redirects make up more than half of all article
-pages.
+In wikis, **redirects** are special pages in that silently take
+readers from the page they are visiting to another page in the
+wiki. In the `English Wikipedia`__, redirects make up more than half
+of all article pages.
 
-Different data sources of handle redirects differently. For example,
-`the MediaWiki API`__ will automatically "follow" redirects but the `XML
-database dumps`__ treat redirects like normal articles. In both cases,
-redirects are often invisible to reseachers.
+Different Wikipedia data sources handle redirects differently. For
+example, `the MediaWiki API`__ will automatically "follow" redirects
+but the `XML database dumps`__ treat redirects like normal
+articles. In both cases, redirects are often invisible to researchers.
 
 __ https://www.mediawiki.org/wiki/API:Main_page
 __ https://meta.wikimedia.org/wiki/Data_dumps
 
 Because redirects constitute a majority of all pages and see a large
-portion of all traffic, Wikipedia reseachers need to take redirects into
-account or their findings may be incomplete or incorrect.  For example,
-the histogram on this page shows the distribution fo edits across pages
-in Wikipedia for every page, and for non-redirects only.  Because
-redirects are almost never edited, the distributions are very different.
-Similarly, because redirects are viewed but almost never edited, any
-study of views over articles should also take redirects into account.
+portion of all traffic, Wikipedia researchers need to take redirects
+into account or their findings may be incomplete or incorrect.  For
+example, the histogram on this page shows the distribution of edits
+across pages in Wikipedia for every page, and for non-redirects only.
+Because redirects are almost never edited, the distributions are
+very different.  Similarly, because redirects are viewed but almost
+never edited, any study of views over articles should also take
+redirects into account.
 
 .. figure:: edits_over_pages.png
    :align: right
@@ -54,7 +55,7 @@ when and where pages redirect.
 
 Much more detail can be found in `Consider the Redirect: A Missing
 Dimension of Wikipedia Research`__ — a short paper that we have written
-to acccompany this dataset and these tools.  If you use this software or
+to accompany this dataset and these tools.  If you use this software or
 these data, we would appreciate if you cite the paper:
 
   *Hill, Benjamin Mako and Aaron Shaw. "Consider the Redirect:  A Missing
@@ -78,25 +79,25 @@ Generating redirect spells from an MediaWiki XML dump involves two steps:
 We have `publicly released software in Python and R to do these two
 steps`__ under the `GNU GPL version 3`__. The software is designed for
 people already comfortable with working with MediaWiki XML dumps and the
-tools and software necessary to do this. We have provided
-`documentation`__ on how to use these tools.
+tools and software necessary to do this.
 
 __ http://projects.mako.cc/source/?p=redirect-tools
 __ http://www.gnu.org/licenses/gpl-3.0.html
-__ README.html
 
 You can download the software from our git repository like::
 
   git clone git://projects.mako.cc/redirect-tools
 
-Detailed documentation on how to use the software is in available in our
-README file.
+Detailed documentation on how to use the software is in available in `our
+README file`__.
+
+__ README.html
 
 Redirect Spell Data
 =========================
 
-In our paper `Consider the Redirect`__, we present an analysis of
-redirect data from English Wikipedia in the dump created in October
+In `our paper`__, we present an analysis of redirect data from English
+Wikipedia in the dump created in October
 2012. You can download `the dump files we used`__ from `the Wikimedia
 Foundation dataset archive`__.  Because generating these dumps can be
 computationally intense, we have published the output of the software
@@ -105,14 +106,15 @@ our software identified and is the dataset used in the paper.
 
 You can download the dataset in the following formats:
 
-- `RData (240MB)`__ — Suitable for use in GNU R
-- `bzip2 compressed tab seperated values (178MB)`__ — Suitable for use
+- `RData (240MB)`__ — Suitable for use in `GNU R`__
+- `bzip2 compressed tab separated values (178MB)`__ — Suitable for use
   in other languages and statistical packages.
 
 __ http://mako.cc/academic/hill_shaw-consider_the_redirect.pdf
 __ http://dumps.wikimedia.org/enwiki/20121001/
 __ http://dumps.wikimedia.org/
 __ enwiki_201210-redirect_spells-v1.RData
+__ http://www.r-project.org/
 __ enwiki_201210-redirect_spells-v1.tsv.bz2
 
 More Information
@@ -137,3 +139,10 @@ a patch using git are online`__.
 __ http://projects.mako.cc/source/
 
 
+----
+
+ⓒ Copyright `Benjamin Mako Hill`__ and `Aaron Shaw`__ :: `Creative Commons BY-SA`__ :: Updated: Thu Jul  3 13:22:29 PDT 2014
+
+__ http://mako.cc/academic/
+__ http://aaronshaw.org/
+__ http://creativecommons.org/licenses/by-sa/4.0/
