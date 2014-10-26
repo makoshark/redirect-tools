@@ -117,6 +117,26 @@ __ enwiki_201210-redirect_spells-v1.RData
 __ http://www.r-project.org/
 __ enwiki_201210-redirect_spells-v1.tsv.bz2
 
+Limitations
+===============
+
+Taking redirects into account is one important step that Wikipedia
+researchers should take but it is hardly a panacea. As just one example,
+in conversations after the publication of this paper, we have realized
+that page moves may lead to additional challenges in interpreting view
+data and in some cases to challenges in interpreting redirect data
+itself. This work reflects a step toward increased validity but it is
+incomplete.
+
+Depending on the research question, a complete picture may need to take
+redirects, moves, other administrative actions, changing ways of
+measuring views, bot and bot-assisted editing, along with other
+currently unidentified features, into account.  We hope to extend our
+work with redirects and explore these issues and we hope other
+researchers will join us in these efforts to build a better
+understanding, tools, and datasets that can improve Wikipedia research.
+
+
 More Information
 ==================
 
