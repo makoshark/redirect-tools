@@ -2,7 +2,7 @@ MediaWiki Redirect Tools
 =======================================================================
 
   | **Author:** `Benjamin Mako Hill`__ <mako@atdot.cc> and `Aaron Shaw`__ <aaron.d.shaw@gmail.com>
-  | **Homepage:** http://networkcollectiv.es/wiki-redirects/
+  | **Homepage:** http://communitydata.cc/wiki-redirects/
   | **Code:** http://projects.mako.cc/source/?p=redirect-tools
   | **License:** `GNU GPLv3 or any later version`__
   | **Description:** Tools to to generate a redirect spells dataset from "raw" MediaWiki XML dumps like those published by the Wikimedia foundation.
