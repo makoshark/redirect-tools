@@ -6,7 +6,8 @@ MediaWiki Redirect Tools
   | **Code:** http://projects.mako.cc/source/?p=redirect-tools
   | **License:** `GNU GPLv3 or any later version`__
   | **Description:** Tools to to generate a redirect spells dataset from "raw" MediaWiki XML dumps like those published by the Wikimedia foundation.
-
+  | **Archival copy:** http://dx.doi.org/10.7910/DVN/NQSHQD 
+  
 __ http://mako.cc/
 __ http://aaronshaw.org/
 __ http://www.gnu.org/copyleft/gpl.html
@@ -14,10 +15,12 @@ __ http://www.gnu.org/copyleft/gpl.html
 If you use this software for research, please cite the following
 paper:
 
-  *Hill, Benjamin Mako and Aaron Shaw. "Consider the Redirect: A
-  Missing Dimension of Wikipedia Research." In Proceedings of the 10th
-  International Symposium on Open Collaboration (OpenSym 2014). ACM
-  Press, 2014.*
+  Hill, Benjamin Mako & Shaw, Aaron. (2014) "Consider the Redirect: A
+  Missing Dimension of Wikipedia Research." In *Proceedings of the 10th
+  International Symposium on Open Collaboration (OpenSym 2014)*. ACM
+  Press. `doi: 10.1145/2641580.2641616`__
+
+__ https://doi.org/10.1145/2641580.2641616 
 
 **Overview:**
 

@@ -58,12 +58,13 @@ Dimension of Wikipedia Research`__ — a short paper that we have written
 to accompany this dataset and these tools.  If you use this software or
 these data, we would appreciate if you cite the paper:
 
-  *Hill, Benjamin Mako and Aaron Shaw. "Consider the Redirect:  A Missing
-  Dimension of Wikipedia Research." In Proceedings of the 10th
-  International Symposium on Open Collaboration (OpenSym 2014). ACM
-  Press, 2014.*
+  Hill, Benjamin Mako & Shaw, Aaron. (2014) "Consider the Redirect: A
+  Missing Dimension of Wikipedia Research." In *Proceedings of the 10th
+  International Symposium on Open Collaboration (OpenSym 2014)*. ACM
+  Press. `doi: 10.1145/2641580.2641616`__
 
-__ http://mako.cc/academic/hill_shaw-consider_the_redirect.pdf
+__ https://doi.org/10.1145/2641580.2641616 
+__ https://doi.org/10.1145/2641580.2641616 
 
 Generating Redirect Spells
 =============================
@@ -110,7 +111,7 @@ You can download the dataset in the following formats:
 - `bzip2 compressed tab separated values (178MB)`__ — Suitable for use
   in other languages and statistical packages.
 
-__ http://mako.cc/academic/hill_shaw-consider_the_redirect.pdf
+__ https://doi.org/10.1145/2641580.2641616 
 __ http://dumps.wikimedia.org/enwiki/20121001/
 __ http://dumps.wikimedia.org/
 __ enwiki_201210-redirect_spells-v1.RData
@@ -144,7 +145,7 @@ For details about the dataset, why it is important, and for examples on
 how it can be used to come to better findings in Wikipedia research,
 please read `the companion paper`__.
 
-__ http://mako.cc/academic/hill_shaw-consider_the_redirect.pdf
+__ https://doi.org/10.1145/2641580.2641616 
 
 If you notice issues or bugs in our data or `code`__, contact `Benjamin
 Mako Hill`__ or `Aaron Shaw`__.  
@@ -161,7 +162,7 @@ __ http://projects.mako.cc/source/
 
 ----
 
-ⓒ Copyright `Benjamin Mako Hill`__ and `Aaron Shaw`__ :: `Creative Commons BY-SA`__ :: Updated: Thu Jul  3 13:22:29 PDT 2014
+ⓒ Copyright `Benjamin Mako Hill`__ and `Aaron Shaw`__ :: `Creative Commons BY-SA`__ :: Updated: Sun Dec 11 16:43:57 PST 2016
 
 __ http://mako.cc/academic/
 __ http://aaronshaw.org/
